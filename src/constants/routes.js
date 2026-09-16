@@ -1,0 +1,18 @@
+export const ROUTES = {
+  home: "/",
+  privacy: "/privacy",
+  terms: "/terms",
+  desk: "/desk",
+  deskBook: "/desk/book",
+  deskThankYou: "/desk/thank-you",
+  deskPrivacy: "/desk/privacy",
+  deskTerms: "/desk/terms",
+  practice: "/practice",
+  practiceBook: "/practice/book",
+  practiceThankYou: "/practice/thank-you",
+  practicePrivacy: "/practice/privacy",
+  practiceTerms: "/practice/terms",
+  yassco: "/yassco",
+  yasscoPrivacy: "/yassco/privacy",
+  yasscoTerms: "/yassco/terms",
+};

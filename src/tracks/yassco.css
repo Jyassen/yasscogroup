@@ -1,0 +1,382 @@
+.yassco-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  color: var(--ink);
+  font-family: var(--ui);
+}
+
+.yassco-transom {
+  position: relative;
+  z-index: 4;
+  border-bottom: 1px solid var(--line);
+  background: var(--white);
+}
+
+.yassco-transom-inner {
+  width: min(var(--container), calc(100% - 40px));
+  min-height: 96px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 0;
+}
+
+.yassco-wordmark {
+  text-decoration: none;
+  color: inherit;
+}
+
+.yassco-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.yassco-mark__badge {
+  width: 2.35rem;
+  height: 2.35rem;
+  display: grid;
+  place-items: center;
+  border-radius: 0.7rem;
+  background: var(--highlight);
+  color: var(--ink);
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.yassco-mark__type {
+  display: grid;
+  line-height: 1;
+}
+
+.yassco-mark__type strong {
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+}
+
+.yassco-mark__type small {
+  margin-top: 0.28rem;
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.yassco-mark--light .yassco-mark__type strong,
+.yassco-mark--light .yassco-mark__type small {
+  color: var(--white);
+}
+
+.yassco-transom-cta {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 10px 15px;
+  border-radius: var(--radius);
+  background: var(--accent);
+  color: var(--white);
+  font-size: 0.88rem;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: var(--shadow);
+  transition: 0.2s;
+}
+
+.yassco-transom-cta:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+}
+
+.yassco-home {
+  flex: 1;
+}
+
+.yassco-hero {
+  width: min(var(--container), calc(100% - 40px));
+  margin: 0 auto;
+  padding: 100px 0 0;
+  text-align: center;
+}
+
+.yassco-eyebrow,
+.yassco-pill {
+  margin: 0 0 18px;
+  color: var(--accent);
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.yassco-display {
+  margin: 0 auto;
+  max-width: 20ch;
+  font-size: clamp(2.8rem, 6vw, 5.7rem);
+  font-weight: 400;
+  line-height: 0.98;
+  letter-spacing: -0.065em;
+  text-wrap: balance;
+}
+
+.yassco-display em {
+  font-style: normal;
+  color: var(--accent);
+}
+
+.yassco-lead {
+  max-width: 42rem;
+  margin: 1.5rem auto 0;
+  color: var(--muted);
+  font-size: 1.2rem;
+  line-height: 1.65;
+}
+
+.yassco-device {
+  position: relative;
+  width: min(1120px, calc(100% - 24px));
+  margin: 2.5rem auto 0;
+  overflow: hidden;
+  border: 8px solid var(--white);
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px),
+    var(--accent-soft);
+  background-size: 48px 48px, 48px 48px, auto;
+  box-shadow: var(--shadow-deep);
+}
+
+.yassco-device-ring {
+  position: absolute;
+  left: 50%;
+  top: 58%;
+  width: min(28rem, 70%);
+  aspect-ratio: 1;
+  pointer-events: none;
+  border: 1.5px solid rgba(232, 197, 71, 0.45);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.yassco-paths {
+  position: relative;
+  z-index: 1;
+  display: grid;
+}
+
+@media (min-width: 860px) {
+  .yassco-paths {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.yassco-door {
+  display: flex;
+  flex-direction: column;
+  min-height: 28rem;
+  padding: 0;
+  text-decoration: none;
+  color: var(--ink);
+  background: transparent;
+  overflow: hidden;
+  transition: background 0.2s;
+}
+
+.yassco-door:hover {
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.yassco-door-photo {
+  width: 100%;
+  height: 13.5rem;
+  object-fit: cover;
+}
+
+.yassco-door-copy {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 1.5rem 1.75rem 1.6rem;
+}
+
+.yassco-door[data-tone="practice"] {
+  border-top: 1px solid var(--accent-line);
+}
+
+@media (min-width: 860px) {
+  .yassco-door[data-tone="practice"] {
+    border-top: 0;
+    border-left: 1px solid var(--accent-line);
+  }
+}
+
+.yassco-plate {
+  display: inline-flex;
+  align-self: flex-start;
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.yassco-door h2 {
+  margin: 1.15rem 0 0.55rem;
+  font-size: clamp(1.55rem, 2.4vw, 2.1rem);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+}
+
+.yassco-door p {
+  margin: 0;
+  max-width: 28rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.yassco-door-cta {
+  margin-top: auto;
+  padding-top: 1.8rem;
+  color: var(--accent);
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+.yassco-home-note {
+  width: min(44rem, calc(100% - 3rem));
+  margin: 2.5rem auto 4.5rem;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.yassco-home-note p {
+  margin: 0;
+}
+
+.yassco-footer {
+  margin-top: auto;
+  padding: 2rem 1.5rem 2.4rem;
+  border-top: 1px solid var(--line);
+  background: var(--white);
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.yassco-footer-inner {
+  width: min(var(--container), calc(100% - 8px));
+  margin: 0 auto;
+}
+
+.yassco-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem 1.35rem;
+  margin-bottom: 0.85rem;
+}
+
+.yassco-footer-links a {
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.yassco-footer-links a:hover {
+  color: var(--accent);
+}
+
+.yassco-legal {
+  flex: 1;
+  padding: 3rem 1.5rem 4rem;
+}
+
+.yassco-legal-panel {
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+.yassco-legal-panel h1 {
+  margin: 0 0 1.25rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+  letter-spacing: -0.05em;
+}
+
+.yassco-legal-note {
+  margin: 0 0 1.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+}
+
+.legal-copy h2 {
+  margin: 1.75rem 0 0.6rem;
+  font-size: 1.15rem;
+}
+
+.legal-copy p,
+.legal-copy li {
+  color: var(--muted);
+}
+
+.legal-copy a {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.yassco-redirect {
+  min-height: 40vh;
+  display: grid;
+  place-items: center;
+  padding: 3rem 1.5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .yassco-transom-cta,
+  .yassco-door {
+    transition: none;
+  }
+
+  .yassco-transom-cta:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .yassco-transom-inner {
+    min-height: 76px;
+  }
+
+  .yassco-transom-cta {
+    max-width: 11rem;
+    text-align: center;
+    line-height: 1.25;
+    white-space: normal;
+  }
+
+  .yassco-hero {
+    padding-top: 64px;
+  }
+
+  .yassco-device {
+    border-width: 4px;
+    border-radius: 1.5rem;
+  }
+
+  .yassco-door {
+    min-height: 0;
+  }
+
+  .yassco-door-photo {
+    height: 11rem;
+  }
+}
