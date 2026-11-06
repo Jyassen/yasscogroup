@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#163a56" />
+  <meta name="description" content="Become a Medicare broker. Pick your state for the licensing path, costs, and starter guide — from Yassco Consulting Group." />
+  <title>Become a Medicare Broker | Yassco Consulting Group</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    :root { --navy: #163a56; --teal: #0e7a6b; --gold: #c19a2e; --ink: #1c2b36; --muted: #5a6b78; --line: #e3e9ee; --bg-soft: #f4f7f9; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "Inter", system-ui, -apple-system, sans-serif; color: var(--ink); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+    .topbar { border-bottom: 1px solid var(--line); }
+    .topbar-inner { max-width: 960px; margin: 0 auto; padding: 18px 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+    .brand { font-weight: 800; letter-spacing: .04em; font-size: 15px; color: var(--navy); text-transform: uppercase; }
+    .brand span { color: var(--teal); }
+    .topbar-phone { font-size: 14px; font-weight: 600; color: var(--muted); text-decoration: none; white-space: nowrap; }
+    main { padding: 48px 0 24px; }
+    h1 { font-size: clamp(32px, 5vw, 46px); line-height: 1.1; font-weight: 900; color: var(--navy); letter-spacing: -0.02em; margin-bottom: 12px; }
+    .lede { font-size: 18px; color: var(--muted); max-width: 620px; margin-bottom: 32px; }
+    .states { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin-bottom: 36px; }
+    .state { display: block; border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; text-decoration: none; color: var(--ink); }
+    .state.live { border-color: var(--teal); background: var(--bg-soft); }
+    .state.live:hover { border-color: var(--navy); }
+    .state .name { font-weight: 800; color: var(--navy); font-size: 16px; }
+    .state .note { font-size: 13px; color: var(--muted); }
+    .state.soon { opacity: .55; }
+    .gold { color: var(--gold); font-weight: 800; }
+    footer { border-top: 1px solid var(--line); padding: 28px 0 40px; }
+    footer p { font-size: 13px; color: var(--muted); }
+    footer a { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">Yassco <span>Consulting Group</span></div>
+      <a class="topbar-phone" href="tel:+19177038352">(917) 703-8352</a>
+    </div>
+  </header>
+  <main class="wrap">
+    <h1>How to Become a Broker</h1>
+    <p class="lede">Pick your state. Each guide lays out the license path, the real costs (about <span class="gold">$663</span> to get started in New Jersey), and what a book of clients could pay — then unlocks the compensation calculator.</p>
+    <div class="states">
+      <a class="state live" href="/broker-guide/new-jersey/">
+        <div class="name">New Jersey</div>
+        <div class="note">Guide live — Life, Accident &amp; Health</div>
+      </a>
+      <div class="state soon"><div class="name">New York</div><div class="note">Coming soon</div></div>
+      <div class="state soon"><div class="name">Pennsylvania</div><div class="note">Coming soon</div></div>
+      <div class="state soon"><div class="name">Connecticut</div><div class="note">Coming soon</div></div>
+      <div class="state soon"><div class="name">Florida</div><div class="note">Coming soon</div></div>
+      <div class="state soon"><div class="name">Texas</div><div class="note">Coming soon</div></div>
+      <div class="state soon"><div class="name">California</div><div class="note">Coming soon</div></div>
+      <div class="state soon"><div class="name">All other states</div><div class="note">Coming soon</div></div>
+    </div>
+  </main>
+  <footer>
+    <div class="wrap">
+      <p><strong>Yassco Consulting Group</strong> · (917) 703-8352</p>
+      <p style="margin-top: 6px;">Educational content only — no promise of income or enrollment results. <a href="https://www.yasscogroup.com/privacy">Privacy Policy</a> · <a href="https://www.yasscogroup.com/terms">Terms &amp; Conditions</a></p>
+    </div>
+  </footer>
+</body>
+</html>
