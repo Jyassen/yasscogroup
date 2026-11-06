@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#163a56" />
+  <meta name="description" content="How to become a Medicare broker in New Jersey. Get licensed, get certified, and build a book of clients that pays you every year — with Yassco Consulting Group." />
+  <title>How to Become a Broker — New Jersey | Yassco Consulting Group</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --navy: #163a56;
+      --navy-dark: #0f2a41;
+      --teal: #0e7a6b;
+      --gold: #c19a2e;
+      --gold-light: #e8c766;
+      --ink: #1c2b36;
+      --muted: #5a6b78;
+      --line: #e3e9ee;
+      --bg: #ffffff;
+      --bg-soft: #f4f7f9;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "Inter", system-ui, -apple-system, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    a { color: var(--teal); }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+
+    /* Top bar: brand only, no main-site nav */
+    .topbar { border-bottom: 1px solid var(--line); }
+    .topbar-inner { max-width: 960px; margin: 0 auto; padding: 18px 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+    .brand { font-weight: 800; letter-spacing: .04em; font-size: 15px; color: var(--navy); text-transform: uppercase; }
+    .brand span { color: var(--teal); }
+    .topbar-phone { font-size: 14px; font-weight: 600; color: var(--muted); text-decoration: none; white-space: nowrap; }
+
+    /* Hero */
+    .hero { padding: 40px 0 8px; }
+    .state-tag { display: inline-flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--teal); margin-bottom: 14px; }
+    .state-tag img { width: 30px; height: auto; display: block; }
+    h1 { font-size: clamp(34px, 6vw, 52px); line-height: 1.08; font-weight: 900; color: var(--navy); letter-spacing: -0.02em; margin-bottom: 14px; }
+    .lede { font-size: 18px; color: var(--muted); max-width: 640px; margin-bottom: 26px; }
+    .hero-img { width: 100%; border-radius: 14px; display: block; margin-bottom: 8px; }
+    .hero-cap { font-size: 13px; color: var(--muted); margin-bottom: 8px; }
+
+    section { padding: 36px 0; }
+    .eyebrow { font-size: 12px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--teal); margin-bottom: 8px; }
+    h2 { font-size: 26px; font-weight: 800; color: var(--navy); letter-spacing: -0.01em; margin-bottom: 12px; }
+    .section-lede { color: var(--muted); max-width: 640px; margin-bottom: 20px; }
+
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+    .card { border: 1px solid var(--line); border-radius: 12px; padding: 20px; background: #fff; }
+    .card h3 { font-size: 16px; color: var(--navy); margin-bottom: 6px; }
+    .card p { font-size: 14px; color: var(--muted); }
+
+    /* Steps */
+    .steps { list-style: none; counter-reset: step; }
+    .steps li { counter-increment: step; border: 1px solid var(--line); border-radius: 12px; padding: 20px 20px 20px 64px; margin-bottom: 12px; position: relative; background: #fff; }
+    .steps li::before { content: counter(step, decimal-leading-zero); position: absolute; left: 20px; top: 20px; font-size: 20px; font-weight: 900; color: var(--gold); }
+    .steps h3 { font-size: 17px; color: var(--navy); margin-bottom: 4px; }
+    .steps p { font-size: 14px; color: var(--muted); }
+    .steps p + p { margin-top: 6px; }
+
+    .gold { color: var(--gold); font-weight: 800; }
+    .fine { font-size: 13px; color: var(--muted); }
+
+    /* Pay + investment */
+    .pay-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 8px; }
+    .pay-box { background: var(--bg-soft); border-radius: 12px; padding: 20px; }
+    .pay-box .label { font-size: 13px; font-weight: 700; color: var(--muted); margin-bottom: 4px; }
+    .pay-box .amount { font-size: 28px; font-weight: 900; color: var(--gold); line-height: 1.1; }
+    .pay-box .sub { font-size: 13px; color: var(--muted); }
+
+    table.invest { width: 100%; border-collapse: collapse; font-size: 15px; margin: 8px 0 12px; }
+    table.invest th, table.invest td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+    table.invest th { font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+    table.invest td:last-child, table.invest th:last-child { text-align: right; white-space: nowrap; }
+    table.invest tr.total td { font-weight: 800; color: var(--navy); border-bottom: none; font-size: 17px; }
+
+    .seniors { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: center; }
+    .seniors img { width: 100%; border-radius: 12px; display: block; }
+    @media (max-width: 640px) { .seniors { grid-template-columns: 1fr; } }
+
+    /* Form + access */
+    .gate { background: var(--navy); border-radius: 16px; padding: 32px 28px; color: #fff; }
+    .gate h2 { color: #fff; }
+    .gate .section-lede { color: #c7d6e2; }
+    .gate-frame { background: #fff; border-radius: 12px; padding: 8px; margin-top: 20px; }
+    .gate-frame iframe { width: 100%; border: 0; border-radius: 8px; min-height: 520px; display: block; }
+    .access { display: none; margin-top: 20px; }
+    .access.show { display: block; }
+    .access .btn-row { display: flex; flex-wrap: wrap; gap: 12px; margin: 18px 0 10px; }
+    .btn { display: inline-block; background: var(--gold); color: var(--navy-dark); font-weight: 800; font-size: 16px; padding: 14px 24px; border-radius: 10px; text-decoration: none; }
+    .btn.ghost { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,.5); }
+    .btn:hover { filter: brightness(1.07); }
+
+    footer { border-top: 1px solid var(--line); padding: 28px 0 40px; margin-top: 20px; }
+    footer p { font-size: 13px; color: var(--muted); }
+    footer a { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">Yassco <span>Consulting Group</span></div>
+      <a class="topbar-phone" href="tel:+19177038352">(917) 703-8352</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="hero">
+      <p class="state-tag"><img src="nj-outline.svg" alt="" /> New Jersey</p>
+      <h1>How to Become a Broker</h1>
+      <p class="lede">Get licensed, get certified, and build a book of clients that pays you every year — working from your laptop and phone.</p>
+      <img class="hero-img" src="https://drive.google.com/uc?export=download&id=1FZkED95fwgtBOWPvTYY6YK6-VFquc05s" alt="Newark, New Jersey skyline at dusk" />
+      <p class="hero-cap">Newark, New Jersey</p>
+    </div>
+
+    <section>
+      <p class="eyebrow">Why Medicare</p>
+      <h2>A book that keeps paying</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>10,000 people turn 65 every day</h3>
+          <p>Each one has to choose coverage. The demand is not going away.</p>
+        </div>
+        <div class="card">
+          <h3>Renewals, not one-time sales</h3>
+          <p>You are paid when a client enrolls, then paid again every year they stay enrolled.</p>
+        </div>
+        <div class="card">
+          <h3>Work from anywhere</h3>
+          <p>Meet clients by phone and video. All you need is a laptop, a phone, and a quiet space.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <p class="eyebrow">The path — New Jersey</p>
+      <h2>Five steps to Ready-to-Sell</h2>
+      <p class="section-lede">The default path is the <strong>Life, Accident and Health</strong> license — 40 hours of pre-licensing, two state exams, fingerprints, then the application.</p>
+      <ol class="steps">
+        <li>
+          <h3>Pre-licensing course — 40 hours</h3>
+          <p>20 hours Life + 20 hours Accident &amp; Health from a New Jersey-approved provider. Course from about <span class="gold">$169.95</span> (self-study, e.g. ExamFX). Your completion certificate never expires — bring it to the exam.</p>
+          <p>Approved provider list: <a href="https://www.nj.gov/dobi/inslic.htm" target="_blank" rel="noreferrer">NJDOBI Licensing &amp; Education</a> (item 20) · <a href="https://www.nj.gov/dobi/insliced/insprodedprov.xlsx" target="_blank" rel="noreferrer">direct list (Excel)</a></p>
+        </li>
+        <li>
+          <h3>PSI state exams — two separate tests</h3>
+          <p>New Jersey has no combined Life &amp; Health exam. Each is multiple-choice, 70% to pass. Accident &amp; Health: 88 questions, 210 minutes. Fee: <span class="gold">$38 per exam</span> (<span class="gold">$76</span> for both). Test center or remote proctored. Score reports are valid 1 year.</p>
+          <p>Schedule: <a href="https://test-takers.psiexams.com/njins" target="_blank" rel="noreferrer">test-takers.psiexams.com/njins</a> or (855) 579-4634 · <a href="https://test-takers.psiexams.com/api/content/bulletin/1640" target="_blank" rel="noreferrer">Candidate Bulletin</a></p>
+        </li>
+        <li>
+          <h3>Fingerprints — before you apply</h3>
+          <p>Live Scan through IdentoGO, <span class="gold">$66.05</span>. Your application cannot be processed until results arrive. Service code <strong>2F16Y3</strong>.</p>
+          <p>Enroll: <a href="https://uenroll.identogo.com/" target="_blank" rel="noreferrer">uenroll.identogo.com</a> or 1-877-503-5981</p>
+        </li>
+        <li>
+          <h3>Apply through NIPR — <span class="gold">$170</span> + $5.60 fee</h3>
+          <p>You must be 18+, a New Jersey resident or with your principal place of business in NJ. Exam results are submitted automatically.</p>
+          <p>Apply: <a href="https://nipr.com/licensing-center/state-requirements/new-jersey-resident-licensing-individual" target="_blank" rel="noreferrer">NIPR — New Jersey resident licensing</a></p>
+        </li>
+        <li>
+          <h3>Stay licensed — renew every 2 years</h3>
+          <p>Renewal lands on the last day of your birth month: 24 CE credits including 3 ethics, renewal fee <span class="gold">$150</span>. Passing candidates may qualify for a 60-day temporary work authority under a licensed producer's supervision.</p>
+          <p>Licensing help: <a href="mailto:inslic@dobi.nj.gov">inslic@dobi.nj.gov</a> · (609) 292-7272</p>
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <p class="eyebrow">After you are licensed</p>
+      <h2>Certify, contract, and start writing</h2>
+      <p class="section-lede">AHIP Medicare + Fraud, Waste &amp; Abuse training every year — about <span class="gold">$175</span> (50 questions, 2 hours, 90% to pass, 3 attempts). Then carrier product certifications, appointments, Ready-to-Sell, and E&amp;O insurance.</p>
+      <p><a href="https://www.ahipmedicaretraining.com/" target="_blank" rel="noreferrer">AHIP Medicare Training</a> · <a href="https://www.medicare.gov/plan-compare" target="_blank" rel="noreferrer">Medicare.gov Plan Compare</a></p>
+    </section>
+
+    <section>
+      <p class="eyebrow">What it pays</p>
+      <h2>2027 commission maximums (CMS)</h2>
+      <div class="pay-grid">
+        <div class="pay-box">
+          <div class="label">New Jersey Medicare Advantage</div>
+          <div class="amount">$902 / $451</div>
+          <div class="sub">initial / renewal, per member</div>
+        </div>
+        <div class="pay-box">
+          <div class="label">National Medicare Advantage</div>
+          <div class="amount">$725 / $363</div>
+          <div class="sub">initial / renewal, per member</div>
+        </div>
+        <div class="pay-box">
+          <div class="label">Part D</div>
+          <div class="amount">$130 / $65</div>
+          <div class="sub">initial / renewal, per member</div>
+        </div>
+      </div>
+      <p class="fine">CMS maximums — carriers may pay less, and nothing here guarantees earnings. Example: 100 retained New Jersey clients ≈ <span class="gold">$45,100 a year</span> in renewals alone (illustration only).</p>
+    </section>
+
+    <section>
+      <p class="eyebrow">Total investment</p>
+      <h2>About <span class="gold">$663</span> to get licensed and Ready-to-Sell</h2>
+      <table class="invest">
+        <thead><tr><th>What</th><th>Cost</th></tr></thead>
+        <tbody>
+          <tr><td>Pre-licensing course, 40 hrs (self-study example)</td><td class="gold">$169.95</td></tr>
+          <tr><td>PSI state exams (2 × $38)</td><td class="gold">$76.00</td></tr>
+          <tr><td>IdentoGO fingerprints</td><td class="gold">$66.05</td></tr>
+          <tr><td>NIPR license application ($170 + $5.60 fee)</td><td class="gold">$175.60</td></tr>
+          <tr><td>AHIP Medicare + FWA certification (about, 2026 price)</td><td class="gold">~$175</td></tr>
+          <tr><td>E&amp;O insurance</td><td>Varies — get a quote</td></tr>
+          <tr class="total"><td>Total (excluding E&amp;O)</td><td class="gold">about $663</td></tr>
+        </tbody>
+      </table>
+      <p class="fine">Fees change — confirm the current amount with the provider before you pay.</p>
+    </section>
+
+    <section>
+      <div class="seniors">
+        <img src="https://drive.google.com/uc?export=download&id=1x8soSBVeFp9si9GkjizSPHb5dDoXDpgk" alt="A senior couple at home" />
+        <div>
+          <p class="eyebrow">The clients you will serve</p>
+          <h2>People who need a guide, not a sales pitch</h2>
+          <p class="section-lede">Plans change every year, so clients need help every year — not just once. Serve them well and last year's book keeps paying while you add new clients on top.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="get-started">
+      <div class="gate">
+        <p class="eyebrow" style="color: var(--gold-light);">Get the starter guide</p>
+        <h2>Get the guide + see what your book could pay</h2>
+        <p class="section-lede">Enter your details and we will unlock the 3-page New Jersey starter guide and the broker compensation calculator — see what a book of your own could pay over 5 years.</p>
+        <div id="form-wrap" class="gate-frame">
+          <!-- HighLevel form embed -->
+          <iframe src="https://api.leadconnectorhq.com/widget/form/xLAFgXbvs9gRIctOWUpS" id="inline-xLAFgXbvs9gRIctOWUpS" data-layout="{'id':'INLINE'}" data-trigger-type="alwaysShow" data-trigger-value="" data-activation-type="alwaysActivated" data-activation-value="" data-deactivation-type="neverDeactivate" data-deactivation-value="" data-form-name="Broker Starter Guide — NJ" data-height="560" data-layout-iframe-id="inline-xLAFgXbvs9gRIctOWUpS" data-form-id="xLAFgXbvs9gRIctOWUpS" title="Broker Starter Guide — NJ"></iframe>
+          <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+        </div>
+        <div id="access" class="access">
+          <h2 style="margin-top: 8px;">You&rsquo;re in.</h2>
+          <p class="section-lede">Your starter guide and calculator are open. Run your numbers, then start step 1.</p>
+          <div class="btn-row">
+            <a class="btn" href="https://www.yasscogroup.com/calculator/" target="_blank" rel="noreferrer">Open the compensation calculator</a>
+            <a class="btn ghost" href="https://drive.google.com/uc?export=download&amp;id=1TQUDTUsUE8N76AhMU3NqVRNIBmYqlVx_" target="_blank" rel="noreferrer">Download the NJ starter guide (PDF)</a>
+          </div>
+          <p class="fine" style="color: #c7d6e2;">Questions? Call Yassco Consulting Group at (917) 703-8352.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p><strong>Yassco Consulting Group</strong> · (917) 703-8352</p>
+      <p style="margin-top: 6px;">This page is educational. It does not promise income or enrollment results. Fees and requirements change — confirm current amounts with the official source before you pay. <a href="https://www.yasscogroup.com/privacy">Privacy Policy</a> · <a href="https://www.yasscogroup.com/terms">Terms &amp; Conditions</a></p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var unlocked = params.get("unlocked") === "1" || window.localStorage.getItem("yassco-guide-unlocked") === "1";
+      if (unlocked) {
+        window.localStorage.setItem("yassco-guide-unlocked", "1");
+        var form = document.getElementById("form-wrap");
+        var access = document.getElementById("access");
+        if (form) form.style.display = "none";
+        if (access) access.classList.add("show");
+        var gate = document.getElementById("get-started");
+        if (gate && params.get("unlocked") === "1") gate.scrollIntoView({ behavior: "smooth" });
+      }
+    })();
+  </script>
+</body>
+</html>
